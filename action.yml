@@ -16,7 +16,7 @@ runs:
       uses: actions/checkout@v6
 
     - name: Setup tempo-cli
-      uses: Tempo-Organization/setup-tempo-cli@v1.1
+      uses: Tempo-Organization/setup-tempo-cli@v1.2
 
     - name: Run tempo-cli mod release creation command
       shell: ${{ inputs.shell }}
