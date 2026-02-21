@@ -8,6 +8,7 @@ inputs:
     default: "cmd"
     # add setup-tempo-cli version input
     # add required github token input
+    # optionally add the nexus mods api key
 
 runs:
   using: "composite"
