@@ -35,7 +35,7 @@ runs:
       uses: softprops/action-gh-release@v2
       with:
         body_path: "body.md"
-        tag_name: ${{ steps.extract_version.outputs.version }}
+        tag_name: test
         files: |
           Modding/releases/*.zip
       env:
