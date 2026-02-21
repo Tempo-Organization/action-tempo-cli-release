@@ -13,16 +13,19 @@ runs:
   using: "composite"
   steps:
     - name: Checkout
+      shell: ${{ inputs.shell }}
       uses: actions/checkout@v6
 
     - name: Setup tempo-cli
+      shell: ${{ inputs.shell }}
       uses: Tempo-Organization/setup-tempo-cli@v1.1
 
     - name: Run tempo-cli mod release creation command
+      shell: ${{ inputs.shell }}
       run: tempo_cli run full_run_all --settings_json ".tempo.json"
 
     - name: List all releases
-      shell: cmd
+      shell: ${{ inputs.shell }}
       run: dir "%CD%\Modding\releases\*.zip" /b /a-d 2>nul > release_list.txt
 
       # - name: Temporary body.md creation
