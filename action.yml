@@ -32,7 +32,7 @@ runs:
       run: echo temporary placeholder > body.md
 
     - name: Release
-      uses: softprops/action-gh-release@v2.5
+      uses: softprops/action-gh-release@main
       with:
         body_path: "body.md"
         tag_name: test
