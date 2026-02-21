@@ -13,11 +13,9 @@ runs:
   using: "composite"
   steps:
     - name: Checkout
-      shell: ${{ inputs.shell }}
-      uses: actions/checkout@v6
+      uses: actions/checkout@v4
 
     - name: Setup tempo-cli
-      shell: ${{ inputs.shell }}
       uses: Tempo-Organization/setup-tempo-cli@v1.1
 
     - name: Run tempo-cli mod release creation command
