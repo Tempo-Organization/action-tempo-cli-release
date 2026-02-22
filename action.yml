@@ -1,6 +1,10 @@
 name: "action tempo-cli release"
 description: ""
 
+permissions:
+  contents: write
+  discussions: write
+
 inputs:
   shell:
     description: "Shell to use for steps"
