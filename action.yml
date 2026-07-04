@@ -25,7 +25,7 @@ runs:
 
     - name: Run tempo-cli mod release creation command
       shell: ${{ inputs.shell }}
-      run: tempo_cli run full_run_all --settings_json ".tempo.json"
+      run: tempo_cli run full-run-all --config-file ".tempo.json"
 
     - name: List all releases
       shell: ${{ inputs.shell }}
